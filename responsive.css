@@ -2,12 +2,9 @@
   html {
     /* 8px / 16px */
     font-size: 50%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
-  body {
-    overflow: hidden;
-  }
   .header {
     padding: 2rem;
     position: relative;
