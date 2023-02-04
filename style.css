@@ -1,0 +1,188 @@
+/* 
+## Colors
+
+### Primary
+
+- Soft orange: hsl(35, 77%, 62%)
+- Soft red: hsl(5, 85%, 63%)
+
+### Neutral
+
+Off-white: hsl(36, 100%, 99%)
+Grayish blue: hsl(233, 8%, 79%)
+Dark grayish blue: hsl(236, 13%, 42%)
+Very dark blue: hsl(240, 100%, 5%)
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(36, 100%, 99%);
+}
+/* =============================HEADER SECTION=================================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 11rem;
+}
+
+.list {
+  font-size: 1.8rem;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.list-item a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+}
+
+.list-item a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.hero {
+  max-width: 130rem;
+  padding: 0 5rem;
+  margin: 2rem auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 2fr 1fr;
+}
+
+.icon-menu {
+  display: none;
+}
+
+/* =============================INTRO SECTION=================================== */
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.intro-title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 1rem;
+}
+
+.intro-img {
+  width: 100%;
+  grid-column: 1/-1;
+  background-image: url(./assets/images/image-web-3-desktop.jpg);
+  background-size: cover;
+  height: 30rem;
+}
+
+.intro-text {
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: hsl(236, 13%, 42%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.btn {
+  display: inline-block;
+  width: 50%;
+  padding: 1.4rem 2.8rem;
+  border: none;
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  cursor: pointer;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
+/* =============================NEWS SECTION=================================== */
+
+.news {
+  width: 100%;
+  background-color: hsl(240, 100%, 5%);
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-title {
+  color: hsl(35, 77%, 62%);
+  font-size: 4rem;
+}
+
+.new-section {
+  border-bottom: 1px solid hsl(233, 8%, 79%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.new-section h3 {
+  color: hsl(36, 100%, 99%);
+  font-size: 2rem;
+}
+
+.new-section p {
+  color: hsl(233, 8%, 79%);
+  font-size: 1.4rem;
+}
+
+.new-section:last-child {
+  border-bottom: none;
+}
+
+/* ===================================Features Section ================================ */
+
+.features {
+  padding: 3rem 6rem;
+  width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.feature {
+  display: flex;
+  gap: 2rem;
+}
+
+.feature img {
+  height: 10rem;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.feature-content h4 {
+  font-size: 3rem;
+  color: hsl(233, 8%, 79%);
+}
+
+.feature-content h5 {
+  font-size: 1.6rem;
+}
+
+.feature-content p {
+  font-size: 1.4rem;
+  color: hsl(233, 8%, 79%);
+}
